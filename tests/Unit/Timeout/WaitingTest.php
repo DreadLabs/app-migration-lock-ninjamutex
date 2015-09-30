@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace DreadLabs\AppMigrationLock\NinjaMutex\Tests\Unit\Timeout;
+namespace DreadLabs\AppMigration\Lock\NinjaMutex\Tests\Unit\Timeout;
 
 use DreadLabs\AppMigration\Exception\LockingException;
-use DreadLabs\AppMigrationLock\NinjaMutex\Timeout\Waiting;
+use DreadLabs\AppMigration\Lock\NinjaMutex\Timeout\Waiting;
 
 /**
  * WaitingTest
@@ -26,7 +26,7 @@ class WaitingTest extends \PHPUnit_Framework_TestCase
     {
         $this->setExpectedException(LockingException::class);
 
-        new Waiting(0);
+        new \DreadLabs\AppMigration\Lock\NinjaMutex\Timeout\Waiting(0);
     }
 
     public function testItThrowsAnExceptionIfConstructionArgumentIsAString()
@@ -59,7 +59,7 @@ class WaitingTest extends \PHPUnit_Framework_TestCase
 
     public function testItReturnsTheFloatValueRoundedToInteger()
     {
-        $waitingTimeout = new Waiting(3.14);
+        $waitingTimeout = new \DreadLabs\AppMigration\Lock\NinjaMutex\Timeout\Waiting(3.14);
 
         $this->assertSame(3, $waitingTimeout->getValue());
     }

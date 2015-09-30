@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace DreadLabs\AppMigrationLock\NinjaMutex\Tests\Unit\Timeout;
+namespace DreadLabs\AppMigration\Lock\NinjaMutex\Tests\Unit\Timeout;
 
-use DreadLabs\AppMigrationLock\NinjaMutex\Timeout\Immediate;
+use DreadLabs\AppMigration\Lock\NinjaMutex\Timeout\Immediate;
 
 /**
  * ImmediateTest

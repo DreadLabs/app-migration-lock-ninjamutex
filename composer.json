@@ -9,12 +9,6 @@
       "email": "dev@van-tomas.de"
     }
   ],
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "file:///home/tommy/workspace/DreadLabs/app-migration"
-    }
-  ],
   "require": {
     "arvenil/ninja-mutex": "~0.5.0"
   },
@@ -31,8 +25,8 @@
   },
   "autoload": {
     "psr-4": {
-      "DreadLabs\\AppMigrationLock\\NinjaMutex\\": "src/",
-      "DreadLabs\\AppMigrationLock\\NinjaMutex\\Tests\\": "tests/"
+      "DreadLabs\\AppMigration\\Lock\\NinjaMutex\\": "src/",
+      "DreadLabs\\AppMigration\\Lock\\NinjaMutex\\Tests\\": "tests/"
     }
   },
   "scripts": {

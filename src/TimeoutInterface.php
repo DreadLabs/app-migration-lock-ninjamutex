@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace DreadLabs\AppMigrationLock\NinjaMutex;
+namespace DreadLabs\AppMigration\Lock\NinjaMutex;
 
 /**
  * TimeoutInterface

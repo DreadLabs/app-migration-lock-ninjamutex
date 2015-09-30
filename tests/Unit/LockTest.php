@@ -9,12 +9,12 @@
  * file that was distributed with this source code.
  */
 
-namespace DreadLabs\AppMigrationLock\NinjaMutex\Tests\Unit;
+namespace DreadLabs\AppMigration\Lock\NinjaMutex\Tests\Unit;
 
 use DreadLabs\AppMigration\Exception\LockingException;
-use DreadLabs\AppMigrationLock\NinjaMutex\Lock;
-use DreadLabs\AppMigrationLock\NinjaMutex\NameInterface;
-use DreadLabs\AppMigrationLock\NinjaMutex\TimeoutInterface;
+use DreadLabs\AppMigration\Lock\NinjaMutex\Lock;
+use DreadLabs\AppMigration\Lock\NinjaMutex\NameInterface;
+use DreadLabs\AppMigration\Lock\NinjaMutex\TimeoutInterface;
 use NinjaMutex\Lock\LockInterface;
 
 /**
@@ -36,7 +36,7 @@ class LockTest extends \PHPUnit_Framework_TestCase
     protected $name;
 
     /**
-     * @var TimeoutInterface|\PHPUnit_Framework_MockObject_MockObject
+     * @var \DreadLabs\AppMigration\Lock\NinjaMutex\TimeoutInterface|\PHPUnit_Framework_MockObject_MockObject
      */
     protected $timeout;
 

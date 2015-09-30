@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace DreadLabs\AppMigrationLock\NinjaMutex\Timeout;
+namespace DreadLabs\AppMigration\Lock\NinjaMutex\Timeout;
 
 use DreadLabs\AppMigration\Exception\LockingException;
-use DreadLabs\AppMigrationLock\NinjaMutex\TimeoutInterface;
+use DreadLabs\AppMigration\Lock\NinjaMutex\TimeoutInterface;
 
 /**
  * Waiting
