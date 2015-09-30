@@ -26,7 +26,7 @@ class WaitingTest extends \PHPUnit_Framework_TestCase
     {
         $this->setExpectedException(LockingException::class);
 
-        new \DreadLabs\AppMigration\Lock\NinjaMutex\Timeout\Waiting(0);
+        new Waiting(0);
     }
 
     public function testItThrowsAnExceptionIfConstructionArgumentIsAString()
@@ -59,7 +59,7 @@ class WaitingTest extends \PHPUnit_Framework_TestCase
 
     public function testItReturnsTheFloatValueRoundedToInteger()
     {
-        $waitingTimeout = new \DreadLabs\AppMigration\Lock\NinjaMutex\Timeout\Waiting(3.14);
+        $waitingTimeout = new Waiting(3.14);
 
         $this->assertSame(3, $waitingTimeout->getValue());
     }
