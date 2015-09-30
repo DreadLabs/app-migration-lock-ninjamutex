@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the AppMigrationLock\NinjaMutex package.
+ * This file is part of the AppMigration\Lock\NinjaMutex package.
  *
  * (c) Thomas Juhnke <dev@van-tomas.de>
  *
