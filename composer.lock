@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6348085da4b5b4b9aae96d9be03f0044",
-    "content-hash": "a7346c6b7dea85293625603875081598",
+    "hash": "cbcd1d5f10cb29d4e8ba250dc21221ca",
+    "content-hash": "e4cef15c148d58095a93e2853dec9a8b",
     "packages": [
         {
             "name": "arvenil/ninja-mutex",
@@ -68,6 +68,50 @@
                 "redis"
             ],
             "time": "2015-09-10 15:12:42"
+        },
+        {
+            "name": "dreadlabs/app-migration",
+            "version": "0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/DreadLabs/app-migration.git",
+                "reference": "5c6af304cab96f027e72a21436d0d171dc4de8db"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/DreadLabs/app-migration/zipball/5c6af304cab96f027e72a21436d0d171dc4de8db",
+                "reference": "5c6af304cab96f027e72a21436d0d171dc4de8db",
+                "shasum": ""
+            },
+            "require-dev": {
+                "apigen/apigen": "~4.1",
+                "codeclimate/php-test-reporter": "dev-master",
+                "pdepend/pdepend": "~2.0",
+                "phploc/phploc": "~2.1",
+                "phpmd/phpmd": "~2.2",
+                "phpunit/phpunit": "~4.6",
+                "sebastian/phpcpd": "~2.0",
+                "squizlabs/php_codesniffer": "~2.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DreadLabs\\AppMigration\\": "src/",
+                    "DreadLabs\\AppMigration\\Tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Juhnke",
+                    "email": "dev@van-tomas.de"
+                }
+            ],
+            "description": "Provides a package for adding runtime migrations to an application.",
+            "time": "2015-10-01 09:53:36"
         }
     ],
     "packages-dev": [

@@ -10,7 +10,8 @@
     }
   ],
   "require": {
-    "arvenil/ninja-mutex": "~0.5.0"
+    "arvenil/ninja-mutex": "~0.5.0",
+    "dreadlabs/app-migration": "~0.1.0"
   },
   "require-dev": {
     "phpmd/phpmd": "~2.2",
